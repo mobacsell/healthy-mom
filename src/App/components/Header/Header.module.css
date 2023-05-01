@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  width: 1140px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s color;
+}
+
+.menu {
+  display: flex;
+  gap: 110px;
+  list-style-type: none;
+  padding: 0 180px;
+  margin: 40px 0 0 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s color;
+}
+
+.link:hover {
+  color: #35b86c;
+}
