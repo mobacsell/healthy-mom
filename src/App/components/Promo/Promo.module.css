@@ -1,11 +1,13 @@
-.root   {
-    margin-top: -150px;
-    padding-top: 150px;
-    background: no-repeat center center url('../../../assets/promo/background-banner.jpg')
+.root {
+  max-width: 1920px;
+  margin-top: -150px;
+  padding-top: 150px;
+  background: no-repeat center center
+    url("../../../assets/promo/background-banner.jpg");
 }
 
 .wrapper {
-  max-width: 1140px;
+  width: 1140px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

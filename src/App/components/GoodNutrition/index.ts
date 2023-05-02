@@ -1,0 +1,1 @@
+export { GoodNutrition } from "./GoodNutrition";
