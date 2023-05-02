@@ -1,0 +1,100 @@
+.root {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 502px;
+  height: 502px;
+  list-style-type: none;
+  border: 1px solid rgba(39, 174, 96, 0.1);
+  border-radius: 50%;
+  padding: 0;
+}
+
+.list::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 150px solid rgba(39, 174, 96, 0.1);
+}
+
+.pregnant {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: -20px;
+  width: 710px;
+  height: 710px;
+  background: no-repeat center/cover
+    url("../../../../../assets/promo/slider-banner-expectant@2x.png");
+}
+
+.nursing {
+  position: absolute;
+  content: "";
+  left: -80px;
+  top: -80px;
+  width: 710px;
+  height: 710px;
+  background: no-repeat center/contain
+    url("../../../../../assets/promo/slider-banner-nursing@2x.png");
+}
+
+.safeTreats {
+  position: absolute;
+  content: "";
+  left: -80px;
+  top: -100px;
+  width: 710px;
+  height: 710px;
+  background: no-repeat center/contain
+    url("../../../../../assets/promo/slider-banner-safe-treats@2x.png");
+}
+
+.item {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  z-index: 2;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s linear;
+}
+
+.item:hover {
+  transform: scale(1.18) translateX(-5%);
+}
+
+.item:first-child {
+  top: 90px;
+  left: -84px;
+}
+
+.item:nth-child(even) {
+  left: -126px;
+}
+
+.item:last-child {
+  bottom: 90px;
+  left: -124px;
+}
+
+.itemRounds {
+  width: 28px;
+  height: 28px;
+  background: no-repeat center/cover
+    url("../../../../../assets/promo/rounds.svg");
+}

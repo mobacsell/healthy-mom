@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  width: 240px;
+  height: 64px;
+  border-radius: 64px;
+  background-color: #35b86c;
+  border: 4px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 0 0 1px rgba(25, 130, 189, 0.11);
+  padding-left: 42px;
+  transition: 0.2s;
+}
+
+.root:hover {
+  border: 4px solid #35b86c;
+  background-color: #fff;
+  color: #35b86c;
+}
+
+.root::after {
+  content: "";
+  background: no-repeat center url("../../assets/promo/Vector.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  background-color: #50d487;
+  transition: 0.2s;
+}
+
+.root:hover::after {
+  background-color: #50d487aa;
+}
