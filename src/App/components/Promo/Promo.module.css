@@ -1,6 +1,6 @@
 .root {
   max-width: 1920px;
-  margin-top: -150px;
+  margin: -150px auto 0;
   padding-top: 150px;
   background: no-repeat center center
     url("../../../assets/promo/background-banner.jpg");
