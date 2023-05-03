@@ -1,0 +1,61 @@
+.root {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 154px;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.root::after {
+  position: absolute;
+  content: "";
+  background: no-repeat 0 0 linear-gradient(to left, #fff 50%, transparent 100%),
+    url("../../../assets/healthSlider/pattern-proper-diet.png");
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 10%;
+}
+
+.header {
+  display: inline-block;
+  color: #35b86c;
+  font-size: 36px;
+  width: 480px;
+  margin: 0 0 86px;
+}
+
+.itemWrapper {
+  height: 100%;
+}
+
+.item {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 26px;
+  outline: none;
+  margin: 0 4px;
+  height: 100%;
+}
+
+.itemImage {
+  width: 100%;
+  border-radius: 26px 26px 0 0;
+}
+
+.itemHeader {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 24px 0 0 0;
+}
+
+.itemText {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b7c56;
+  padding: 12px 18px 24px;
+  margin: 0;
+}
