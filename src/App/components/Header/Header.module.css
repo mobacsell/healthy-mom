@@ -1,36 +1,98 @@
 .root {
   display: flex;
+  justify-content: space-between;
   width: 1140px;
   margin: 0 auto;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  margin-top: 40px;
 }
 
 .logo {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
   color: #000;
-  transition: 0.3s color;
 }
 
 .menu {
   display: flex;
   gap: 110px;
   list-style-type: none;
-  padding: 0 180px;
-  margin: 40px 0 0 0;
-  font-weight: 500;
+  margin: 0;
+  margin-right: 230px;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .link {
+  position: relative;
   text-decoration: none;
   color: #000;
-  transition: 0.3s color;
+  line-height: 22px;
+  transition: 0.2s color;
 }
 
 .link:hover {
   color: #35b86c;
+}
+
+.link:hover::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -40%;
+  width: 100%;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.btnBurger {
+  position: relative;
+  z-index: 4;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.btnStrip {
+  width: 38px;
+  height: 6px;
+  background-color: #35b86c;
+  border-radius: 32px;
+}
+
+@media (max-width: 1280px) {
+  .root {
+    width: unset;
+    margin: 0 62px;
+    margin-top: 40px;
+  }
+
+  .menu {
+    gap: 70px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 360px;
+    margin-right: 0;
+  }
+
+  .item {
+    min-width: 86px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .btnBurger {
+    display: flex;
+  }
 }
