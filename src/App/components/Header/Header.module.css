@@ -11,6 +11,7 @@
   font-weight: 700;
   text-decoration: none;
   color: #000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .menu {
@@ -29,6 +30,7 @@
   color: #000;
   line-height: 22px;
   transition: 0.2s color;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .link:hover {
@@ -51,6 +53,7 @@
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .btnStrip {

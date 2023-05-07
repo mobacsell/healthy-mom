@@ -22,9 +22,13 @@ export function Header() {
 
   const handlerBtnBurgerClick = () => {
     setIsShow(!isShow);
-    isShow
-      ? (document.body.style.overflow = "visible")
-      : (document.body.style.overflow = "hidden");
+    if (isShow) {
+      document.body.style.overflow = "visible";
+      document.documentElement.style.overflow = "visible";
+    } else {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+    }
   };
 
   return (
