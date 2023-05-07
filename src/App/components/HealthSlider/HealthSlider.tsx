@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import styles from "./HealthSlider.module.css";
 import { ItemData } from "./types";

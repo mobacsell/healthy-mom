@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./BannerSlider.module.css";
 import { useState } from "react";
 

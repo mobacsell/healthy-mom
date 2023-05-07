@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./GoodNutrition.module.css";
 import image from "../../../assets/goodNutrition/nutritionist.png";
 

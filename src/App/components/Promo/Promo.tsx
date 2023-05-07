@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Promo.module.css";
 import { Button } from "../../../shared/Button";
 import { BannerSlider } from "./components/BannerSlider";
