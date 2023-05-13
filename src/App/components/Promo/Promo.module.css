@@ -1,27 +1,23 @@
 .root {
-  max-width: 1920px;
-  margin: -150px auto 0;
-  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  margin-top: -260px;
+  padding-top: 260px;
   background: no-repeat center center
     url("../../../assets/promo/background-banner.jpg");
 }
 
 .wrapper {
   width: 1140px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
-}
-
-.order {
-  width: 440px;
+  margin-top: 150px;
 }
 
 .header {
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -29,5 +25,68 @@
   margin: 30px 0 50px;
   font-size: 22px;
   font-weight: 500;
-  width: 332px;
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 148px;
+    margin-top: 100px;
+  }
+
+  .order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    margin-top: 70px;
+  }
+
+  .header {
+    font-size: 32px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin-top: 50px;
+    gap: 70px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    margin: 22px 0 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .root {
+    width: 320px;
+  }
 }

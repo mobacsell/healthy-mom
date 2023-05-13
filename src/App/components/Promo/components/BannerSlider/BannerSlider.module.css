@@ -1,8 +1,5 @@
 .root {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .list {
@@ -20,81 +17,237 @@
 .list::before {
   position: absolute;
   content: "";
-  display: block;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 150px solid rgba(39, 174, 96, 0.1);
+  border: 136px solid rgba(39, 174, 96, 0.1);
+}
+
+.itemHeader {
+  display: none;
+}
+
+.imageNone {
+  display: none;
 }
 
 .pregnant {
   position: absolute;
-  content: "";
-  left: -20px;
-  top: -20px;
-  width: 710px;
-  height: 710px;
-  background: no-repeat center/cover
-    url("../../../../../assets/promo/slider-banner-expectant@2x.png");
+  left: -186px;
+  top: -50px;
 }
 
 .nursing {
   position: absolute;
-  content: "";
-  left: -80px;
-  top: -80px;
-  width: 710px;
-  height: 710px;
-  background: no-repeat center/contain
-    url("../../../../../assets/promo/slider-banner-nursing@2x.png");
+  left: 50px;
+  top: -90px;
 }
 
 .safeTreats {
   position: absolute;
-  content: "";
-  left: -80px;
-  top: -100px;
-  width: 710px;
-  height: 710px;
-  background: no-repeat center/contain
-    url("../../../../../assets/promo/slider-banner-safe-treats@2x.png");
+  left: 100px;
+  top: -150px;
+}
+
+.buttonsWrapper {
+  display: none;
 }
 
 .item {
   position: absolute;
+  z-index: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 14px;
-  cursor: pointer;
-  z-index: 2;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  transition: 0.2s linear;
-}
-
-.item:hover {
-  transform: scale(1.18) translateX(-5%);
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .item:first-child {
   top: 90px;
-  left: -84px;
+  left: -78px;
 }
 
 .item:nth-child(even) {
-  left: -126px;
+  left: -124px;
 }
 
 .item:last-child {
   bottom: 90px;
-  left: -124px;
+  left: -116px;
+}
+
+.itemText {
+  transition: 0.3s transform;
+  color: #bfbfbf;
+}
+
+.currentItemText {
+  color: #000;
 }
 
 .itemRounds {
   width: 28px;
   height: 28px;
-  background: no-repeat center/cover
-    url("../../../../../assets/promo/rounds.svg");
+  transition: 0.3s;
+}
+
+.item:hover > .itemText {
+  transition: 0.3s transform;
+  transform-origin: 50% 50%;
+  transform: scale(1.2) translate(-18%, -8%);
+  color: #000;
+}
+
+.item:hover > .itemRounds {
+  transition: 0.3s;
+  transform-origin: 50% 50%;
+  transform: scale(1.5);
+}
+
+@media (max-width: 1280px) {
+  .root {
+    margin-left: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    margin: 0;
+    height: 874px;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .itemHeader {
+    display: block;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sliderButton {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #35b86c;
+    cursor: pointer;
+    transition: 0.3s background-color, border;
+  }
+
+  .sliderButton:hover {
+    background-color: #fff;
+    border: 1px solid #35b86c;
+    transition: 0.3s background-color, border;
+  }
+
+  .sliderButton:hover::before {
+    border-left: 2px solid #35b86c;
+    border-top: 2px solid #35b86c;
+  }
+
+  .sliderButtonLeft {
+    right: calc(50vw - 112px);
+    top: 300px;
+    z-index: 1;
+  }
+
+  .sliderButton::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+  }
+
+  .sliderButtonLeft::before {
+    transform: rotate(-45deg);
+    margin-left: 4px;
+  }
+
+  .sliderButtonRight {
+    left: calc(50vw - 112px);
+    top: 300px;
+    z-index: 1;
+  }
+
+  .sliderButtonRight::before {
+    transform: rotate(135deg);
+    margin-left: -4px;
+  }
+
+  .pregnant {
+    position: relative;
+    left: 14px;
+    top: -50px;
+  }
+
+  .nursing {
+    position: relative;
+    left: 4px;
+    top: -66px;
+  }
+
+  .safeTreats {
+    position: relative;
+    left: 46px;
+    top: -96px;
+  }
+}
+
+@media (max-width: 600px) {
+  .root {
+    height: 492px;
+  }
+
+  .sliderButtonLeft {
+    right: calc(50vw - 70px);
+    top: 80px;
+  }
+
+  .sliderButtonRight {
+    left: calc(50vw - 70px);
+    top: 80px;
+  }
+
+  .pregnant {
+    width: 532px;
+    left: 4px;
+  }
+
+  .nursing {
+    width: 224px;
+  }
+
+  .safeTreats {
+    width: 234px;
+    left: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .sliderButtonLeft {
+    right: 90px;
+  }
+
+  .sliderButtonRight {
+    left: 90px;
+  }
 }

@@ -30,12 +30,17 @@
   font-weight: 700;
 }
 
+html  {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
+  overflow-x: hidden;
 }
 
 code {

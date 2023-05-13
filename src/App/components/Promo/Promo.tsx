@@ -7,9 +7,15 @@ export function Promo() {
     <section className={styles.root}>
       <div className={styles.wrapper}>
         <div className={styles.order}>
-          <h1 className={styles.header}>Доставка здорового питания для мам</h1>
+          <h1 className={styles.header}>
+            Доставка здорового
+            <br />
+            питания для мам
+          </h1>
           <p className={styles.paragraph}>
-            Правильный и вкусный рацион для Вас и вашего ребенка
+            Правильный и вкусный рацион
+            <br />
+            для Вас и вашего ребенка
           </p>
           <Button />
         </div>
