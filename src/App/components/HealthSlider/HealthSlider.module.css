@@ -1,61 +1,82 @@
 .root {
-  position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
+  background: no-repeat 0 0
+    url("../../../assets/healthSlider/pattern-products.png");
   padding-top: 154px;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.root::after {
-  position: absolute;
-  content: "";
-  background: no-repeat 0 0 linear-gradient(to left, #fff 50%, transparent 100%),
-    url("../../../assets/healthSlider/pattern-proper-diet.png");
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 10%;
 }
 
 .header {
-  display: inline-block;
+  text-align: center;
   color: #35b86c;
-  font-size: 36px;
-  width: 480px;
-  margin: 0 0 86px;
-}
-
-.itemWrapper {
-  height: 100%;
+  font-size: 41px;
+  font-weight: 700;
+  margin: 0;
 }
 
 .item {
   box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 26px;
-  outline: none;
-  margin: 0 4px;
+  background-color: #ffffff00;
   height: 100%;
+  border-radius: 10px;
+  outline: none;
+  padding: 0 8px;
+  margin-top: 104px;
 }
 
 .itemImage {
   width: 100%;
-  border-radius: 26px 26px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .itemHeader {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  margin: 24px 0 0 0;
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
 }
 
 .itemText {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  color: #3b7c56;
+  color: #6c997f;
   padding: 12px 18px 24px;
   margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .root {
+    background-position: 0 60px;
+    padding-top: 210px;
+  }
+
+  .header {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .root {
+    background-position: 0 60px;
+    padding-top: 164px;
+  }
+
+  .header {
+    font-size: 22px;
+  }
+
+  .itemHeader {
+    font-size: 16px;
+  }
+
+  .itemText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .root {
+    width: 320px;
+  }
 }
