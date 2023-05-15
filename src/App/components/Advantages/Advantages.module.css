@@ -1,0 +1,152 @@
+.root {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  background: no-repeat 0 450px/350px url("../../../assets/advantages/tree.png"),
+    no-repeat center -140px url("../../../assets/advantages/background-delivery.jpg");
+  padding-bottom: 90px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 1350px;
+  top: 150px;
+  left: -336px;
+}
+
+.image {
+  width: 100%;
+}
+
+.content {
+  margin-left: -600px;
+}
+
+.header {
+  font-size: 42px;
+  font-weight: 700;
+  color: #35b86c;
+}
+
+.list {
+  margin-top: 86px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 38px;
+  gap: 20px;
+}
+
+.itemWrapperImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 0 #6880a3;
+}
+
+.itemContent {
+  width: 460px;
+}
+
+.itemHeader {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.itemText {
+  margin: 0;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat center -176px url("../../../assets/advantages/background-delivery.jpg");
+    padding: 0;
+  }
+
+  .imageWrapper {
+    position: static;
+    width: 1350px;
+    margin-left: 90px;
+    padding-top: 104px;
+  }
+
+  .content {
+    position: relative;
+    top: -160px;
+    margin: -60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .imageWrapper {
+    width: 700px;
+    margin-left: 40px;
+    padding-top: 60px;
+  }
+
+  .content {
+    margin-top: 76px;
+    margin-bottom: -90px;
+  }
+
+  .header {
+    font-size: 22px;
+  }
+
+  .list {
+    margin-top: 38px;
+  }
+
+  .item {
+    justify-content: center;
+    margin-bottom: 24px;
+    gap: 14px;
+  }
+
+  .itemContent {
+    width: 240px;
+  }
+
+  .itemWrapperImage {
+    width: 34px;
+    height: 34px;
+  }
+
+  .itemHeader {
+    font-size: 16px;
+  }
+
+  .itemText {
+    font-size: 14px;
+  }
+
+  .itemImage {
+    width: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  .root  {
+    width: 320px;
+  }
+}
