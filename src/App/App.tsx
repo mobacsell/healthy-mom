@@ -4,6 +4,7 @@ import { GoodNutrition } from "./components/GoodNutrition";
 import { HealthSlider } from "./components/HealthSlider";
 import { Advantages } from "./components/Advantages";
 import { Instagram } from "./components/Instagram";
+import { OrderForm } from "./components/OrderForm";
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
         <HealthSlider />
         <Advantages />
         <Instagram />
+        <OrderForm />
       </main>
     </div>
   );

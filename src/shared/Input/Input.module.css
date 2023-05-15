@@ -1,0 +1,36 @@
+.root {
+  box-sizing: border-box;
+  width: 404px;
+  height: 56px;
+  background-color: #e8f7ee;
+  border-radius: 64px;
+  border: 1px solid #fff;
+  outline: none;
+  padding: 0 44px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.3s border, background-color;
+}
+
+.root::placeholder {
+  color: #b2dac2;
+}
+
+.root:hover {
+  border: 1px solid #35b86c;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.root:focus {
+  border: 1px solid #35b86c;
+  background-color: #fff;
+}
+
+@media (max-width: 600px) {
+  .root {
+    width: 280px;
+    height: 40px;
+    padding: 0 32px;
+  }
+}
