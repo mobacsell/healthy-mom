@@ -5,6 +5,7 @@ import { HealthSlider } from "./components/HealthSlider";
 import { Advantages } from "./components/Advantages";
 import { Instagram } from "./components/Instagram";
 import { OrderForm } from "./components/OrderForm";
+import { Footer } from "./components/Footer";
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
         <Instagram />
         <OrderForm />
       </main>
+      <Footer />
     </div>
   );
 }

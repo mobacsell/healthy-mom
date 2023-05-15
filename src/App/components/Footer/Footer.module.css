@@ -1,0 +1,88 @@
+.root {
+  display: flex;
+  justify-content: center;
+  background-color: #35b86c;
+}
+
+.wrapper {
+  width: 614px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s color;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.logo:hover {
+  color: #2b2b2b;
+  transition: 0.3s color;
+}
+
+.listMenu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.itemMenu {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.listService {
+  display: flex;
+  gap: 54px;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.itemService {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s color;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.link:hover {
+  color: #2b2b2b;
+  transition: 0.3s color;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 408px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 320px;
+  }
+
+  .listMenu {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+  }
+
+  .listService {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
