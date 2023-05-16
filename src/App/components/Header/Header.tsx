@@ -23,11 +23,11 @@ export function Header() {
   const handlerBtnBurgerClick = () => {
     setIsShow(!isShow);
     if (isShow) {
-      document.body.style.overflow = "visible";
-      document.documentElement.style.overflow = "visible";
+      document.body.style.overflowY = "visible";
+      document.documentElement.style.overflowY = "visible";
     } else {
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflowY = "hidden";
+      document.documentElement.style.overflowY = "hidden";
     }
   };
 
@@ -37,9 +37,9 @@ export function Header() {
         Здоровая мама
       </a>
       <ul className={styles.menu}>
-        {urls.map((value) => {
+        {urls.map((value, index) => {
           return (
-            <li className={styles.item}>
+            <li className={styles.item} key={`${index}_item`}>
               <a href={value.url} className={styles.link}>
                 {value.text}
               </a>

@@ -7,9 +7,9 @@ export function BurgerMenu({ urls, isShow }: BurgerMenuProps) {
   return (
     <div className={wrapperStyle}>
       <ul className={styles.list}>
-        {urls.map((value) => {
+        {urls.map((value, index) => {
           return (
-            <li className={styles.item}>
+            <li className={styles.item} key={`${index}_item`}>
               <a href={value.url} className={styles.link}>
                 {value.text}
               </a>

@@ -1,4 +1,5 @@
 .root {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   width: 1140px;
@@ -66,7 +67,7 @@
 @media (max-width: 1280px) {
   .root {
     width: unset;
-    margin: 0 62px;
+    padding: 0 62px;
     margin-top: 40px;
   }
 
@@ -97,5 +98,17 @@
 
   .btnBurger {
     display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .root {
+    padding: 0 22px;
+  }
+}
+
+@media (max-width: 320px) {
+  .root {
+    width: 320px;
   }
 }
