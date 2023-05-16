@@ -34,9 +34,9 @@ export function Footer() {
           Здоровая мама
         </a>
         <ul className={styles.listMenu}>
-          {listMenu.map((value) => {
+          {listMenu.map((value, index) => {
             return (
-              <li className={styles.itemMenu}>
+              <li className={styles.itemMenu} key={`${index}_item`}>
                 <a href={value.url} className={styles.link}>
                   {value.text}
                 </a>
@@ -45,9 +45,9 @@ export function Footer() {
           })}
         </ul>
         <ul className={styles.listService}>
-          {listService.map((value) => {
+          {listService.map((value, index) => {
             return (
-              <li className={styles.itemService}>
+              <li className={styles.itemService} key={`${index}_item`}>
                 <a href={value.url} className={styles.link}>
                   {value.text}
                 </a>
