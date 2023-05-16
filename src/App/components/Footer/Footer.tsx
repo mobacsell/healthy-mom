@@ -5,14 +5,17 @@ export function Footer() {
     {
       text: "Важность правильного питания",
       url: "/",
+      link: "goodNutrition",
     },
     {
       text: "Почему мы?",
       url: "/",
+      link: "advantages",
     },
     {
       text: "Где заказать?",
       url: "/",
+      link: "orderForm",
     },
   ];
 
@@ -37,7 +40,7 @@ export function Footer() {
           {listMenu.map((value, index) => {
             return (
               <li className={styles.itemMenu} key={`${index}_item`}>
-                <a href={value.url} className={styles.link}>
+                <a href={`#${value.link}`} className={styles.link}>
                   {value.text}
                 </a>
               </li>

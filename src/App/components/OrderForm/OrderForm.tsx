@@ -25,7 +25,7 @@ export function OrderForm() {
   };
 
   return (
-    <section className={styles.root}>
+    <section className={styles.root} id="orderForm">
       <div className={styles.wrapper}>
         <h2 className={styles.header}>Хотите получить персональное меню?</h2>
         <p className={styles.text}>

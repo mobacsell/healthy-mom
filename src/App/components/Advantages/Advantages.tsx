@@ -34,7 +34,7 @@ export function Advantages() {
   ];
 
   return (
-    <section className={styles.root}>
+    <section className={styles.root} id="advantages">
       <div className={styles.wrapper}>
         <div className={styles.imageWrapper}>
           <img

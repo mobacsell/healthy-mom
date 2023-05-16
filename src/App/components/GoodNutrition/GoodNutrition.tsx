@@ -11,7 +11,7 @@ export function GoodNutrition() {
   ];
 
   return (
-    <section className={styles.root}>
+    <section className={styles.root} id="goodNutrition">
       <div className={styles.wrapper}>
         <div className={styles.imageWrapper}>
           <img src={image} alt="женщина с овощами" className={styles.image} />

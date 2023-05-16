@@ -9,14 +9,17 @@ export function Header() {
     {
       text: "Важность правильного питания",
       url: "/",
+      link: "goodNutrition"
     },
     {
       text: "Почему мы?",
       url: "/",
+      link: "advantages"
     },
     {
       text: "Где заказать?",
       url: "/",
+      link: "orderForm"
     },
   ];
 
@@ -40,7 +43,7 @@ export function Header() {
         {urls.map((value, index) => {
           return (
             <li className={styles.item} key={`${index}_item`}>
-              <a href={value.url} className={styles.link}>
+              <a href={`#${value.link}`} className={styles.link}>
                 {value.text}
               </a>
             </li>
@@ -52,7 +55,7 @@ export function Header() {
         <div className={styles.btnStrip}></div>
         <div className={styles.btnStrip}></div>
       </div>
-      <BurgerMenu urls={urls} isShow={isShow} />
+      <BurgerMenu urls={urls} isShow={isShow} changeModalStatus={handlerBtnBurgerClick}/>
     </header>
   );
 }
