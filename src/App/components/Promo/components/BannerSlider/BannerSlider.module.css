@@ -150,15 +150,16 @@
     background-color: #35b86c;
     cursor: pointer;
     transition: 0.3s background-color, border;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
-  .sliderButton:hover {
+  .sliderButton:active {
     background-color: #fff;
     border: 1px solid #35b86c;
     transition: 0.3s background-color, border;
   }
 
-  .sliderButton:hover::before {
+  .sliderButton:active::before {
     border-left: 2px solid #35b86c;
     border-top: 2px solid #35b86c;
   }

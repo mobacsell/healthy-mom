@@ -1,8 +1,8 @@
 .root {
   display: flex;
   justify-content: center;
-  margin-top: -260px;
-  padding-top: 260px;
+  margin-top: -280px;
+  padding-top: 280px;
   background: no-repeat center center
     url("../../../assets/promo/background-banner.jpg");
 }
