@@ -50,9 +50,9 @@ export function Advantages() {
             выбирают нашу доставку?
           </h2>
           <ul className={styles.list}>
-            {list.map((value) => {
+            {list.map((value, index) => {
               return (
-                <li className={styles.item}>
+                <li className={styles.item} key={`${index}_item`}>
                   <div className={styles.itemWrapperImage}>
                     <img
                       src={value.imgUrl}
