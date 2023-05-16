@@ -16,9 +16,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   align-items: center;
-  border: 1px solid #35b86c;
+  box-shadow: 0 0 15px #575f5a;
   background: #fff;
   border-radius: 14px;
   padding: 30px;
@@ -31,14 +31,14 @@
 }
 
 .header {
-  font-size: 42px;
+  font-size: 28px;
   font-weight: 700;
   color: #35b86c;
   margin: 0;
 }
 
 .text {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin: 0;
   margin-top: 22px;
@@ -47,8 +47,8 @@
 
 @media (max-width: 600px) {
   .window {
-    gap: 30px;
-    padding: 16px;
+    gap: 20px;
+    padding: 20px 14px;
   }
 
   .header {
@@ -58,6 +58,6 @@
   .text {
     font-size: 14px;
     margin-top: 16px;
-    width: 250px;
+    width: 280px;
   }
 }
