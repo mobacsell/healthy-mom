@@ -17,7 +17,7 @@ export function Promo() {
             <br />
             для Вас и вашего ребенка
           </p>
-          <Button />
+          <Button text="Оформить заказ" action="goto" changeModalStatus={() => {}} />
         </div>
         <BannerSlider />
       </div>

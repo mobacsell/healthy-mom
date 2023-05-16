@@ -1,9 +1,10 @@
 import { Button } from "../../../../../shared/Button";
 import styles from "./Modal.module.css";
+import { ModalProps } from "./types";
 
-export function Modal() {
+export function Modal({ modal, changeModalStatus }: ModalProps) {
   return (
-    <div className={styles.root}>
+    <div className={`${styles.root} ${modal ? "" : styles["none"]}`}>
       <div className={styles.window}>
         <div className={styles.content}>
           <h2 className={styles.header}>Благодарим вас!</h2>
@@ -12,7 +13,11 @@ export function Modal() {
             вопросы.
           </p>
         </div>
-        <Button />
+        <Button
+          text="Ожидать звонка"
+          action="statusModal"
+          changeModalStatus={changeModalStatus}
+        />
       </div>
     </div>
   );

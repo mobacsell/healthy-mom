@@ -2,11 +2,25 @@ import { Button } from "../../../shared/Button";
 import { Input } from "../../../shared/Input";
 import styles from "./OrderForm.module.css";
 import { Modal } from "./components/Modal";
+import { useState } from "react";
 
 export function OrderForm() {
+  const [isModal, setIsModal] = useState<boolean>(false);
+
   const handlerKeyDown = (event: React.KeyboardEvent<HTMLFormElement>) => {
     if (event.keyCode === 13) {
       event.preventDefault();
+    }
+  };
+
+  const changeModalStatus = (): void => {
+    setIsModal(!isModal);
+    if (isModal) {
+      document.body.style.overflowY = "visible";
+      document.documentElement.style.overflowY = "visible";
+    } else {
+      document.body.style.overflowY = "hidden";
+      document.documentElement.style.overflowY = "hidden";
     }
   };
 
@@ -27,10 +41,14 @@ export function OrderForm() {
         >
           <Input inputText="Ваше имя" />
           <Input inputText="Ваш телефон" />
-          <Button />
+          <Button
+            text="Оформить заказ"
+            action="statusModal"
+            changeModalStatus={changeModalStatus}
+          />
         </form>
       </div>
-      <Modal />
+      <Modal modal={isModal} changeModalStatus={changeModalStatus} />
     </section>
   );
 }
