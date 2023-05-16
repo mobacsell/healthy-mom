@@ -1,3 +1,14 @@
+# Здоровая мама
+
+Адаптивная верстка лендинга Здоровая мама.    
+Проект развернут на [Netlify](https://mobacsell-healthy-mom.netlify.app/)
+
+## Используемые технологии:
+
+* **React**
+* **TypeScript**
+* **React-slick** - слайдер продуктов питания
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
