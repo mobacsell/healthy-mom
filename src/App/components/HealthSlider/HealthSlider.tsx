@@ -91,9 +91,9 @@ export function HealthSlider() {
         для здорового питания:
       </h2>
       <Slider {...settings}>
-        {dataSlider.map((value) => {
+        {dataSlider.map((value, index) => {
           return (
-            <div className={styles.item}>
+            <div className={styles.item} key={`${index}_item`}>
               <img
                 src={value.url}
                 alt={value.header}
