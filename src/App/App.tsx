@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer";
 
 export function App() {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <Promo />
@@ -20,6 +20,6 @@ export function App() {
         <OrderForm />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
