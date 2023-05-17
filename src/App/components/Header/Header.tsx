@@ -2,26 +2,26 @@ import { useState } from "react";
 import { BurgerMenu } from "./BurgerMenu";
 import styles from "./Header.module.css";
 
+const urls = [
+  {
+    text: "Важность правильного питания",
+    url: "/",
+    link: "goodNutrition",
+  },
+  {
+    text: "Почему мы?",
+    url: "/",
+    link: "advantages",
+  },
+  {
+    text: "Где заказать?",
+    url: "/",
+    link: "orderForm",
+  },
+];
+
 export function Header() {
   const [isShow, setIsShow] = useState(false);
-
-  const urls = [
-    {
-      text: "Важность правильного питания",
-      url: "/",
-      link: "goodNutrition"
-    },
-    {
-      text: "Почему мы?",
-      url: "/",
-      link: "advantages"
-    },
-    {
-      text: "Где заказать?",
-      url: "/",
-      link: "orderForm"
-    },
-  ];
 
   const handlerBtnBurgerClick = () => {
     setIsShow(!isShow);
@@ -55,7 +55,11 @@ export function Header() {
         <div className={styles.btnStrip}></div>
         <div className={styles.btnStrip}></div>
       </div>
-      <BurgerMenu urls={urls} isShow={isShow} changeModalStatus={handlerBtnBurgerClick}/>
+      <BurgerMenu
+        urls={urls}
+        isShow={isShow}
+        changeModalStatus={handlerBtnBurgerClick}
+      />
     </header>
   );
 }

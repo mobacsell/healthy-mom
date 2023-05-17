@@ -1,38 +1,38 @@
 import styles from "./Advantages.module.css";
-import advantage from "../../../assets/advantages/advantage-girls.png";
+import advantage from "../../../assets/advantages/advantageGirls.png";
 import checkmark from "../../../assets/advantages/checkmark.svg";
-import curvedArrow from "../../../assets/advantages/curved-arrow.svg";
-import healthCare from "../../../assets/advantages/health-care.svg";
+import curvedArrow from "../../../assets/advantages/curvedArrow.svg";
+import healthCare from "../../../assets/advantages/healthCare.svg";
 import leaf from "../../../assets/advantages/leaf.svg";
 
-export function Advantages() {
-  const list = [
-    {
-      header: "Экологичность",
-      text: "продукты выращиваются без применения химии",
-      imgUrl: leaf,
-      imgText: "Листочек",
-    },
-    {
-      header: "Сбалансированность:",
-      text: "наши блюда составляют ведущие диетологи по уникальной рецептуре",
-      imgUrl: checkmark,
-      imgText: "Галочка",
-    },
-    {
-      header: "Индивидуальность",
-      text: "для вашего выбора мы предоставляем большое кол-во вариантов блюд",
-      imgUrl: curvedArrow,
-      imgText: "Обратная стрелка",
-    },
-    {
-      header: "Польза:",
-      text: "питаясь нашими продуктами, Вы можете быть уверены в своем здоровье и здоровье ребенка",
-      imgUrl: healthCare,
-      imgText: "Сердечко",
-    },
-  ];
+const list = [
+  {
+    header: "Экологичность",
+    text: "продукты выращиваются без применения химии",
+    imgUrl: leaf,
+    imgText: "Листочек",
+  },
+  {
+    header: "Сбалансированность:",
+    text: "наши блюда составляют ведущие диетологи по уникальной рецептуре",
+    imgUrl: checkmark,
+    imgText: "Галочка",
+  },
+  {
+    header: "Индивидуальность",
+    text: "для вашего выбора мы предоставляем большое кол-во вариантов блюд",
+    imgUrl: curvedArrow,
+    imgText: "Обратная стрелка",
+  },
+  {
+    header: "Польза:",
+    text: "питаясь нашими продуктами, Вы можете быть уверены в своем здоровье и здоровье ребенка",
+    imgUrl: healthCare,
+    imgText: "Сердечко",
+  },
+];
 
+export function Advantages() {
   return (
     <section className={styles.root} id="advantages">
       <div className={styles.wrapper}>

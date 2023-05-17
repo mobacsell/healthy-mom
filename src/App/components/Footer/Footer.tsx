@@ -1,35 +1,35 @@
 import styles from "./Footer.module.css";
 
+const listMenu = [
+  {
+    text: "Важность правильного питания",
+    url: "/",
+    link: "goodNutrition",
+  },
+  {
+    text: "Почему мы?",
+    url: "/",
+    link: "advantages",
+  },
+  {
+    text: "Где заказать?",
+    url: "/",
+    link: "orderForm",
+  },
+];
+
+const listService = [
+  {
+    text: "Политика конфиденциальности",
+    url: "/",
+  },
+  {
+    text: "Условия онлайн-использования",
+    url: "/",
+  },
+];
+
 export function Footer() {
-  const listMenu = [
-    {
-      text: "Важность правильного питания",
-      url: "/",
-      link: "goodNutrition",
-    },
-    {
-      text: "Почему мы?",
-      url: "/",
-      link: "advantages",
-    },
-    {
-      text: "Где заказать?",
-      url: "/",
-      link: "orderForm",
-    },
-  ];
-
-  const listService = [
-    {
-      text: "Политика конфиденциальности",
-      url: "/",
-    },
-    {
-      text: "Условия онлайн-использования",
-      url: "/",
-    },
-  ];
-
   return (
     <footer className={styles.root}>
       <div className={styles.wrapper}>

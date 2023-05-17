@@ -1,31 +1,31 @@
 @font-face {
   font-family: "Lato";
-  src: url("./assets/fonts/Lato-Regular.woff") format("woff"),
-    url("./assets/fonts/Lato-Regular.woff2") format("woff2");
+  src: url("./assets/fonts/latoRegular.woff") format("woff"),
+    url("./assets/fonts/latoRegular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("./assets/fonts/Lato-Medium.woff") format("woff"),
-    url("./assets/fonts/Lato-Medium.woff2") format("woff2");
+  src: url("./assets/fonts/latoMedium.woff") format("woff"),
+    url("./assets/fonts/latoMedium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("./assets/fonts/Lato-Semibold.woff") format("woff"),
-    url("./assets/fonts/Lato-Semibold.woff2") format("woff2");
+  src: url("./assets/fonts/latoSemibold.woff") format("woff"),
+    url("./assets/fonts/latoSemibold.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("./assets/fonts/Lato-Bold.woff") format("woff"),
-    url("./assets/fonts/Lato-Bold.woff2") format("woff2");
+  src: url("./assets/fonts/latoBold.woff") format("woff"),
+    url("./assets/fonts/latoBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }

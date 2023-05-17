@@ -1,9 +1,9 @@
 import styles from "./BannerSlider.module.css";
 import { useState, useEffect } from "react";
 import { CurrentItemType } from "./types";
-import pregnant from "../../../../../assets/promo/bannerSlider/slider-banner-expectant.png";
-import nursing from "../../../../../assets/promo/bannerSlider/slider-banner-nursing.png";
-import safeTreats from "../../../../../assets/promo/bannerSlider/slider-banner-safe-treats.png";
+import pregnant from "../../../../../assets/promo/bannerSlider/sliderBannerExpectant.png";
+import nursing from "../../../../../assets/promo/bannerSlider/sliderBannerNursing.png";
+import safeTreats from "../../../../../assets/promo/bannerSlider/sliderBannerSafeTreats.png";
 import rounds from "../../../../../assets/promo/bannerSlider/rounds.svg";
 
 export function BannerSlider() {

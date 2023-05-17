@@ -84,7 +84,7 @@
   height: 122px;
   flex-wrap: wrap;
   list-style-position: unset;
-  list-style-image: url("../../../assets/goodNutrition/checkmark-proper-diet.svg");
+  list-style-image: url("../../../assets/goodNutrition/checkmarkProperDiet.svg");
 }
 
 .item {

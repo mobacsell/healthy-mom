@@ -9,7 +9,7 @@
   align-items: center;
   width: 1920px;
   background: no-repeat 0 450px/350px url("../../../assets/advantages/tree.png"),
-    no-repeat center -140px url("../../../assets/advantages/background-delivery.jpg");
+    no-repeat center -140px url("../../../assets/advantages/backgroundDelivery.jpg");
   padding-bottom: 90px;
 }
 
@@ -79,7 +79,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: no-repeat center -176px url("../../../assets/advantages/background-delivery.jpg");
+    background: no-repeat center -176px url("../../../assets/advantages/backgroundDelivery.jpg");
     padding: 0;
   }
 
