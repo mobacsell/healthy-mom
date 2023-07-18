@@ -1,5 +1,5 @@
 import styles from "./GoodNutrition.module.css";
-import image from "../../../assets/goodNutrition/nutritionist.png";
+import image from "../../../assets/goodNutrition/nutritionist.webp";
 
 export function GoodNutrition() {
   const itemList = [

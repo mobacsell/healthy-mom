@@ -1,9 +1,9 @@
 import Slider from "react-slick";
 import styles from "./HealthSlider.module.css";
 import { ItemData } from "./types";
-import vegetables from "../../../assets/healthSlider/sliderVegetables.jpg";
-import meat from "../../../assets/healthSlider/sliderMeat.jpg";
-import cheese from "../../../assets/healthSlider/sliderCheese.jpg";
+import vegetables from "../../../assets/healthSlider/sliderVegetables.webp";
+import meat from "../../../assets/healthSlider/sliderMeat.webp";
+import cheese from "../../../assets/healthSlider/sliderCheese.webp";
 
 const dataSlider: ItemData[] = [
   {

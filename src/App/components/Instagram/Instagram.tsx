@@ -1,5 +1,5 @@
 import styles from "./Instagram.module.css";
-import instagram from "../../../assets/instagram/instagramImages.png";
+import instagram from "../../../assets/instagram/instagramImages.webp";
 
 export function Instagram() {
   return (

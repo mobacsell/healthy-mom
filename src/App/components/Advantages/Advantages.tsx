@@ -1,5 +1,5 @@
 import styles from "./Advantages.module.css";
-import advantage from "../../../assets/advantages/advantageGirls.png";
+import advantage from "../../../assets/advantages/advantageGirls.webp";
 import checkmark from "../../../assets/advantages/checkmark.svg";
 import curvedArrow from "../../../assets/advantages/curvedArrow.svg";
 import healthCare from "../../../assets/advantages/healthCare.svg";

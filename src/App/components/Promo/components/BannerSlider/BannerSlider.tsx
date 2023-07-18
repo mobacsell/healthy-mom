@@ -1,13 +1,13 @@
 import styles from "./BannerSlider.module.css";
 import { useState, useEffect } from "react";
 import { CurrentItemType } from "./types";
-import pregnant from "../../../../../assets/promo/bannerSlider/sliderBannerExpectant.png";
-import nursing from "../../../../../assets/promo/bannerSlider/sliderBannerNursing.png";
-import safeTreats from "../../../../../assets/promo/bannerSlider/sliderBannerSafeTreats.png";
+import pregnant from "../../../../../assets/promo/bannerSlider/sliderBannerExpectant.webp";
+import nursing from "../../../../../assets/promo/bannerSlider/sliderBannerNursing.webp";
+import safeTreats from "../../../../../assets/promo/bannerSlider/sliderBannerSafeTreats.webp";
 import rounds from "../../../../../assets/promo/bannerSlider/rounds.svg";
 
 export function BannerSlider() {
-  const [currentItem, setCurrentImg] = useState<CurrentItemType>({
+  const [currentItem, setCurrentItem] = useState<CurrentItemType>({
     itemId: 0,
     itemText: "Для беременных",
     imgUrl: pregnant,
@@ -53,7 +53,7 @@ export function BannerSlider() {
    */
   const handlerClick = (status: CurrentItemType) => {
     if (status.itemId !== currentItem.itemId) {
-      setCurrentImg(status);
+      setCurrentItem(status);
       setIsImgLoading(true);
     }
   };
