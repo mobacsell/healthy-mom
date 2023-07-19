@@ -1,10 +1,10 @@
 import styles from "./BannerSlider.module.css";
 import { useState, useEffect } from "react";
 import { CurrentItemType } from "./types";
-import pregnant from "../../../../../assets/promo/bannerSlider/sliderBannerExpectant.webp";
-import nursing from "../../../../../assets/promo/bannerSlider/sliderBannerNursing.webp";
-import safeTreats from "../../../../../assets/promo/bannerSlider/sliderBannerSafeTreats.webp";
-import rounds from "../../../../../assets/promo/bannerSlider/rounds.svg";
+import pregnant from "@assets/promo/bannerSlider/sliderBannerExpectant.webp";
+import nursing from "@assets/promo/bannerSlider/sliderBannerNursing.webp";
+import safeTreats from "@assets/promo/bannerSlider/sliderBannerSafeTreats.webp";
+import rounds from "@assets/promo/bannerSlider/rounds.svg";
 
 export function BannerSlider() {
   const [currentItem, setCurrentItem] = useState<CurrentItemType>({

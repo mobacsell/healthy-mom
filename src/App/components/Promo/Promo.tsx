@@ -1,5 +1,5 @@
 import styles from "./Promo.module.css";
-import { Button } from "../../../shared/Button";
+import { Button } from "@shared/Button";
 import { BannerSlider } from "./components/BannerSlider";
 
 export function Promo() {

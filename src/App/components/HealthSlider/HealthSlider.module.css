@@ -1,6 +1,6 @@
 .root {
   background: no-repeat 0 0
-    url("../../../assets/healthSlider/patternProducts.webp");
+    url("@assets/healthSlider/patternProducts.webp");
   padding-top: 154px;
 }
 

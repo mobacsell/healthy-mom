@@ -8,8 +8,8 @@
   justify-content: center;
   align-items: center;
   width: 1920px;
-  background: no-repeat 0 450px/350px url("../../../assets/advantages/tree.webp"),
-    no-repeat center -140px url("../../../assets/advantages/backgroundDelivery.webp");
+  background: no-repeat 0 450px/350px url("@assets/advantages/tree.webp"),
+    no-repeat center -140px url("@assets/advantages/backgroundDelivery.webp");
   padding-bottom: 90px;
 }
 
@@ -79,7 +79,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: no-repeat center -176px url("../../../assets/advantages/backgroundDelivery.webp");
+    background: no-repeat center -176px url("@assets/advantages/backgroundDelivery.webp");
     padding: 0;
   }
 

@@ -4,7 +4,7 @@
   margin-top: -280px;
   padding-top: 280px;
   background: no-repeat center center
-    url("../../../assets/promo/backgroundBanner.webp");
+    url("@assets/promo/backgroundBanner.webp");
 }
 
 .wrapper {

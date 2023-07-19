@@ -1,5 +1,5 @@
-import { Button } from "../../../shared/Button";
-import { Input } from "../../../shared/Input";
+import { Button } from "@shared/Button";
+import { Input } from "@shared/Input";
 import styles from "./OrderForm.module.css";
 import { Modal } from "./components/Modal";
 import { useState } from "react";

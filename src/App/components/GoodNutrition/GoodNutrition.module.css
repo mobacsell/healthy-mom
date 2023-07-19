@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   background: no-repeat -200px -230px
-      url("../../../assets/goodNutrition/circles.svg"),
+      url("@assets/goodNutrition/circles.svg"),
     no-repeat calc(100% + 230px) calc(100% + 250px)
-      url("../../../assets/goodNutrition/circles.svg"),
+      url("@assets/goodNutrition/circles.svg"),
     #35b86c;
   margin-top: 280px;
 }
@@ -84,7 +84,7 @@
   height: 122px;
   flex-wrap: wrap;
   list-style-position: unset;
-  list-style-image: url("../../../assets/goodNutrition/checkmarkProperDiet.svg");
+  list-style-image: url("@assets/goodNutrition/checkmarkProperDiet.svg");
 }
 
 .item {

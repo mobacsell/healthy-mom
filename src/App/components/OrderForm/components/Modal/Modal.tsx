@@ -1,4 +1,5 @@
-import { Button } from "../../../../../shared/Button";
+// import { Button } from "@shared/Button";
+import { Button } from "@shared/Button";
 import styles from "./Modal.module.css";
 import { ModalProps } from "./types";
 

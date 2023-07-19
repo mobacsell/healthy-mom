@@ -9,7 +9,7 @@
   align-items: center;
   width: 1920px;
   background: no-repeat 0 160px
-    url("../../../assets/instagram/patternInstagramLeft.webp");
+    url("@assets/instagram/patternInstagramLeft.webp");
 }
 
 .header {
