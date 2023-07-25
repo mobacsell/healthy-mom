@@ -17,7 +17,7 @@
   z-index: 1;
   font-size: 42px;
   font-weight: 700;
-  color: #35b86c;
+  color: var(--primary-color);
   margin: 0;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .instLink:hover {
-  color: #35b86c;
+  color: var(--primary-color);
   transition: 0.3s;
 }
 

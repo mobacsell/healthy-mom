@@ -11,7 +11,7 @@
 .btnStrip {
   width: 38px;
   height: 6px;
-  background-color: #35b86c;
+  background-color: var(--primary-color);
   border-radius: 32px;
 }
 

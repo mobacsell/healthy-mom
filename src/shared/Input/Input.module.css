@@ -17,13 +17,13 @@
 }
 
 .root:hover {
-  border: 1px solid #35b86c;
+  border: 1px solid var(--primary-color);
   background-color: #fff;
   transition: 0.3s;
 }
 
 .root:focus {
-  border: 1px solid #35b86c;
+  border: 1px solid var(--primary-color);
   background-color: #fff;
 }
 

@@ -30,6 +30,10 @@
   font-weight: 700;
 }
 
+:root {
+  --primary-color: #35b86c;
+}
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -71,7 +75,7 @@ code {
   height: 50px;
   border: 0;
   border-radius: 50%;
-  background-color: #35b86c;
+  background-color: var(--primary-color);
   font-size: 0;
   cursor: pointer;
   transition: 0.3s background-color, border;
@@ -79,7 +83,7 @@ code {
 
 .slick-arrow:active {
   background-color: #fff;
-  border: 1px solid #35b86c;
+  border: 1px solid var(--primary-color);
   transition: 0.3s background-color, border;
 }
 
@@ -93,8 +97,8 @@ code {
 }
 
 .slick-arrow:active::before {
-  border-left: 2px solid #35b86c;
-  border-top: 2px solid #35b86c;
+  border-left: 2px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
 }
 
 .slick-prev::before {

@@ -5,7 +5,7 @@
       url("@assets/goodNutrition/circles.svg"),
     no-repeat calc(100% + 230px) calc(100% + 250px)
       url("@assets/goodNutrition/circles.svg"),
-    #35b86c;
+      var(--primary-color);
   margin-top: 280px;
 }
 
@@ -57,7 +57,7 @@
 .imageText {
   font-size: 14px;
   font-weight: 600;
-  color: #35b86c;
+  color: var(--primary-color);
   margin: 0;
 }
 

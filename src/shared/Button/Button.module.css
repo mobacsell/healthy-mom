@@ -9,7 +9,7 @@
   font-size: 14px;
   font-weight: 700;
   color: #fff;
-  background-color: #35b86c;
+  background-color: var(--primary-color);
   border: 2px solid #fff;
   border-radius: 64px;
   outline: 1px solid #1982bd33;
@@ -32,18 +32,18 @@
 
 @media (min-width: 1025px) {
   .root:hover {
-    border: 2px solid #35b86c;
+    border: 2px solid var(--primary-color);
     background-color: #fff;
-    color: #35b86c;
+    color: var(--primary-color);
     transition: 0.3s background-color, border, color;
   }
 }
 
 @media (max-width: 1024px) {
   .root:active {
-    border: 2px solid #35b86c;
+    border: 2px solid var(--primary-color);
     background-color: #fff;
-    color: #35b86c;
+    color: var(--primary-color);
     transition: 0.3s background-color, border, color;
   }
 }
