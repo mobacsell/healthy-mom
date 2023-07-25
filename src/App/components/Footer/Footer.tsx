@@ -1,33 +1,6 @@
 import styles from "./Footer.module.css";
-
-const listMenu = [
-  {
-    text: "Важность правильного питания",
-    url: "/",
-    link: "goodNutrition",
-  },
-  {
-    text: "Почему мы?",
-    url: "/",
-    link: "advantages",
-  },
-  {
-    text: "Где заказать?",
-    url: "/",
-    link: "orderForm",
-  },
-];
-
-const listService = [
-  {
-    text: "Политика конфиденциальности",
-    url: "/",
-  },
-  {
-    text: "Условия онлайн-использования",
-    url: "/",
-  },
-];
+import { listMenu } from "./data";
+import { listService } from "./data";
 
 export function Footer() {
   return (

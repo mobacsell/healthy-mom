@@ -1,24 +1,8 @@
 import { useState } from "react";
 import { BurgerMenu } from "./BurgerMenu";
 import styles from "./Header.module.css";
-
-const urls = [
-  {
-    text: "Важность правильного питания",
-    url: "/",
-    link: "goodNutrition",
-  },
-  {
-    text: "Почему мы?",
-    url: "/",
-    link: "advantages",
-  },
-  {
-    text: "Где заказать?",
-    url: "/",
-    link: "orderForm",
-  },
-];
+import { urls } from "./data";
+import { HumburgerBtn } from "./HumburgerBtn/HumburgerBtn";
 
 export function Header() {
   const [isShow, setIsShow] = useState(false);
@@ -50,11 +34,7 @@ export function Header() {
           );
         })}
       </ul>
-      <div className={styles.btnBurger} onClick={handlerBtnBurgerClick}>
-        <div className={styles.btnStrip}></div>
-        <div className={styles.btnStrip}></div>
-        <div className={styles.btnStrip}></div>
-      </div>
+      <HumburgerBtn handlerBtnBurgerClick={handlerBtnBurgerClick} />
       <BurgerMenu
         urls={urls}
         isShow={isShow}

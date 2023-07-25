@@ -47,23 +47,6 @@
   border-bottom: 1px solid #f3f3f3;
 }
 
-.btnBurger {
-  position: relative;
-  z-index: 4;
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.btnStrip {
-  width: 38px;
-  height: 6px;
-  background-color: #35b86c;
-  border-radius: 32px;
-}
-
 @media (max-width: 1280px) {
   .root {
     width: unset;
@@ -94,10 +77,6 @@
 @media (max-width: 768px) {
   .menu {
     display: none;
-  }
-
-  .btnBurger {
-    display: flex;
   }
 }
 
