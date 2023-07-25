@@ -7,12 +7,6 @@ import { useState } from "react";
 export function OrderForm() {
   const [isModal, setIsModal] = useState<boolean>(false);
 
-  const handlerKeyDown = (event: React.KeyboardEvent<HTMLFormElement>) => {
-    if (event.keyCode === 13) {
-      event.preventDefault();
-    }
-  };
-
   const changeModalStatus = (): void => {
     setIsModal(!isModal);
     if (isModal) {
@@ -36,7 +30,9 @@ export function OrderForm() {
           method="post"
           className={styles.form}
           onKeyDown={(event) => {
-            handlerKeyDown(event);
+            if (event.keyCode === 13) {
+              event.preventDefault();
+            }
           }}
         >
           <Input inputText="Ваше имя" />
